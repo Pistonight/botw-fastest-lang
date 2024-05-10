@@ -1,0 +1,58 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Install dependencies
+    cmds:
+    - bun install
+    - task: install:addtime
+
+  ci:
+    cmds:
+    - bun install --frozen-lockfile
+    - task: install:addtime
+
+  install:addtime:
+    cmds:
+    - mkdir -p libs
+    - curl https://pistonite.github.io/addtime/time.ts > libs/addtime.ts 
+
+  check:
+    desc: Check for issues
+    cmds:
+    - task: eslint
+      vars:
+        ESLINT_ARGS: ""
+    - task: prettier
+      vars:
+        PRETTIER_ARGS: --check
+
+  fix:
+    desc: Fix issues
+    cmds:
+    - task: prettier
+      vars:
+        PRETTIER_ARGS: --write
+    - task: eslint
+      vars:
+        ESLINT_ARGS: --fix
+
+  build:
+    desc: Build the app for distribution
+    cmds:
+    - bunx --bun tsc
+    - bunx --bun vite build
+
+  dev:
+    desc: Start the app in watch mode
+    cmds:
+    - bunx --bun vite --host
+
+
+  eslint:
+    cmds:
+    - bunx --bun eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --cache {{.ESLINT_ARGS}}
+
+  prettier:
+    cmds:
+    - bunx --bun prettier "./**/*.{ts,tsx,json,js,jsx,cjs,css}" {{.PRETTIER_ARGS}}

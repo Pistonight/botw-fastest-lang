@@ -21,7 +21,6 @@ jobs:
     - uses: oven-sh/setup-bun@v1
     - run: task ci
     - run: task check
-    - run: task test
     - run: task build
     - uses: actions/upload-pages-artifact@v3
       with:

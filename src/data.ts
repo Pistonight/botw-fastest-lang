@@ -252,7 +252,6 @@ Maz Koshia Bossfight Outro                    | 00.26 | 00.19 | 00.25 | 00.16 | 
 Master Cycle Zero Gift                        | 00.02 | 00.02 | 00.04 |       | 00.02 | 00.01 | 00.03 | 00.03 | 00.01
 EX The Champion's Ballad Outro by Zelda       |       | 00.03 | 00.03 |       | 00.02 | 00.01 | 00.04 | 00.05 | 00.02
     `,
-
 ];
 
 export const AllCutsceneNames = Cutscenes.flatMap(({ data }) =>

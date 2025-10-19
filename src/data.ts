@@ -195,7 +195,7 @@ function parseDelta(delta: string): string {
 export const Cutscenes: CutsceneCategoryData[] = [
     category`
 Main Quests                                   | EN    | JA    | DE    | LA    | ES    | IT    | CA    | FR    | RU
-Pick up Sheika Slate                          | 00.10 |       | 03.28 | 01.29 | 00.14 | 01.27 | 03.28 | 04.01 | 00.27
+Pick up Sheikah Slate                         | 00.10 |       | 03.28 | 01.29 | 00.14 | 01.27 | 03.28 | 04.01 | 00.27
 Opening Outer Door of Shrine of Resurrection  |       | 03.10 | 10.01 | 05.01 | 05.21 | 06.10 | 03.28 | 07.00 | 07.25
 Divine Beast Intro from Zelda                 | 07.01 |       | 09.03 | 08.18 | 12.13 | 12.11 | 08.13 | 11.14 | 06.08
 After Last Divine Beast from Zelda            | 09.02 |       | 12.26 | 07.06 | 12.23 | 14.21 | 09.06 | 09.29 | 13.26
@@ -222,6 +222,37 @@ Windblight Reflight Outro                     | 02.18 |       | 01.25 |       | 
 Waterblight Reflight Outro                    | 04.11 | 00.04 | 00.14 | 02.08 | 00.02 |       | 01.00 | 01.14 | 01.28
 Fireblight Reflight Outro                     | 05.04 |       | 01.06 | 00.05 | 00.02 | 00.16 | 00.25 | 01.05 | 00.22
     `,
+    category`
+Small Differences                             | EN    | JA    | DE    | LA    | ES    | IT    | CA    | FR    | RU    
+New Game                                      | 00.13 | 00.11 | 00.08 | 00.09 | 00.16 | 00.12 |       | 00.17 | 00.16
+Head to the point ...                         | 01.14 | 01.16 | 01.24 | 01.23 | 01.14 | 01.26 |       | 01.20 | 01.11
+First Encounter with Impa                     | 00.04 |       | 00.01 | 00.03 |       | 00.02 | 00.01 | 00.01 | 00.02
+Zelda's Monologue After the Last Memory       |       | 00.04 | 00.02 | 00.05 | 00.07 |       | 00.06 | 00.02 | 00.06
+Ta'loh Naeg's Teaching                        | 00.17 | 00.18 | 00.14 | 00.07 | 00.18 | 00.20 | 00.15 |       | 00.12
+Toh Yahsa, Trial of Thunder                   | 00.03 | 00.04 | 00.05 | 00.08 |       | 00.05 | 00.07 | 00.04 | 00.08
+EX The Champions' Ballad Intro by Zelda       | 00.24 | 00.27 | 00.26 | 00.29 | 00.29 | 00.24 |       | 00.23 | 00.13
+Great Plateau Revisit Intro                   |       | 00.10 | 00.04 | 00.15 | 00.09 | 00.04 | 00.15 | 00.04 | 00.16
+Great Plateau Revisit Outro                   | 00.04 | 00.03 |       |       | 00.05 | 00.02 | 00.04 | 00.04 | 00.03
+Trial of the Sword Monk Outro                 | 00.07 | 00.11 | 00.11 | 00.03 | 00.14 | 00.15 | 00.13 |       | 00.06
+Gift from DLC Shrine Monk First and Second    | 00.04 | 00.04 |       | 00.05 | 00.05 | 00.02 | 00.03 | 00.05 | 
+Gift from DLC Shrine Monk Third               | 00.04 | 00.02 | 00.03 |       | 00.03 | 00.02 | 00.01 | 00.03 | 00.02
+Pedestal for Urbosa's Song Quests             | 00.04 | 00.03 | 00.01 | 00.05 | 00.05 | 00.04 | 00.04 | 00.04 | 
+Kass' Poem for Urbosa's Song Quests           | 01.04 | 01.04 |       | 01.04 | 01.04 | 01.02 | 00.28 | 00.26 | 01.01
+Pedestal for Revali's Song Quests             | 00.04 | 00.01 | 00.09 | 00.01 | 00.03 | 00.02 | 00.04 | 00.06 | 
+Kass' Poem for Revali's Song Quests           | 00.08 | 00.05 |       | 00.07 | 00.12 | 00.06 | 00.02 | 00.09 | 00.05
+Pedestal for Mipha's Song Quests              | 00.05 | 00.01 | 00.09 | 00.05 | 00.06 | 00.05 |       | 00.07 | 00.03
+Kass' Poem for Mipha's Song Quests            | 00.28 | 00.28 | 00.25 | 01.08 | 01.12 | 00.27 |       | 00.29 | 00.29
+Pedestal for Daruk's Song Quests              | 00.06 | 00.03 | 00.09 | 00.05 | 00.06 | 00.04 |       | 00.10 | 00.03
+Kass' Poem for Daruk's Song Quests            | 00.10 | 00.08 | 00.03 | 00.07 | 00.12 | 00.08 |       | 00.07 | 00.07
+Final Ground Invitation by Maz Koshia         | 00.04 |       | 00.03 |       | 00.03 | 00.03 | 00.01 | 00.03 | 
+Final Ground Intro                            | 00.05 |       | 00.07 | 00.03 | 00.06 | 00.06 | 00.05 | 00.08 | 00.07
+Final Ground Start                            | 00.05 |       | 00.05 |       | 00.03 | 00.04 | 00.03 | 00.04 | 00.03
+Maz Koshia Bossfight Intro                    | 00.03 | 00.13 | 00.10 | 00.09 | 00.09 |       | 00.12 | 00.12 | 00.07
+Maz Koshia Bossfight Outro                    | 00.26 | 00.19 | 00.25 | 00.16 | 00.13 |       | 00.25 | 01.01 | 00.15
+Master Cycle Zero Gift                        | 00.02 | 00.02 | 00.04 |       | 00.02 | 00.01 | 00.03 | 00.03 | 00.01
+EX The Champion's Ballad Outro by Zelda       |       | 00.03 | 00.03 |       | 00.02 | 00.01 | 00.04 | 00.05 | 00.02
+    `,
+
 ];
 
 export const AllCutsceneNames = Cutscenes.flatMap(({ data }) =>

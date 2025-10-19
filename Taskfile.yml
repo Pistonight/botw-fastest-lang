@@ -15,7 +15,7 @@ tasks:
   install:addtime:
     cmds:
     - mkdir -p libs
-    - curl https://pistonite.github.io/addtime/time.ts > libs/addtime.ts 
+    - curl https://addtime.pistonite.dev/dist.ts > libs/addtime.ts 
 
   check:
     desc: Check for issues
